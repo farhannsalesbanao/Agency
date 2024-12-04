@@ -1,0 +1,48 @@
+
+/* .overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay:target{
+    visibility: visible;
+    opacity: 1;
+} */
+
+#submitmsg, #submitmsg2{
+    display: none;
+    
+}
+
+.submitmsg {
+    
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.submitmsg__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-light);
+    width: 100%;
+    max-width: 650px;
+    color: var(--clr-dark);
+    font-size: 2rem;
+    padding: 2em;
+}
+

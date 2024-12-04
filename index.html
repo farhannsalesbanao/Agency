@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@300,400,500,600,700&display=swap" rel="stylesheet">
+    <title>Sales Banao Get Qualified, Sales-Ready Leads—No Hassle! 🎯</title>
+</head>
+
+<body>
+    <header class="header container" id="header">
+        <nav>
+            <ul class="header__menu">
+                <li>
+                    <a class="header__link" href="#About">About</a>
+                </li>
+                <li>
+                    <a class="header__link" href="#Process">Process</a>
+                </li>
+                <li>
+                    <a href="https://salesbanao.com/"><img src="SalesBanao.png" alt="Sales Banao"></a>
+                </li>
+                <li>
+                    <a class="header__link" href="#Contact">Contact</a>
+                </li>
+                <li>
+                    <a href="#Socials" class="header__link" >Socials</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+    <main>
+        <section class="hero container">
+            <p class="hero__subtitle hero__subtitle1">
+                Effortless Business Growth
+            </p>
+            <h1 class="hero__title">
+              Get Qualified,
+              
+              <strong class="hero__strong">
+                Sales-Ready 
+              </strong>
+              <br>
+              Leads
+              
+              Without  Any Hassle!
+            </h1>
+
+            <p class="hero__subtitle hero__subtitle2">
+              "We help local businesses grow by simplifying client inflow with result-driven paid ads tailored to your needs."
+            </p>
+            <a href="#popupform" class="hero__btn btn" id="getmoreleads">
+          Get More Leads!
+        </a>
+            <img class="hero__img" src="https://i.ibb.co/WGZL9zM/down-arrow.png" alt="Down Arrow">
+
+            <!-- POP UP FORM STARS -->
+
+            <section class="popupform container " id="popupform">
+              <div class="popupform__container ">
+                <a href="#">❌</a>
+                <h2 class="leads__title about__title">GET <span class="leads__span">10</span> NEW  QUALIFIED LEADS</h2>
+                <h4 class="leads__subtitle" > Within 30 Days, or You Don't Pay.</h4>
+                <form action="https://script.google.com/macros/s/AKfycbw7NfNJYiLbpSd5GnFg6Dnz99GCduMergv8L3MsCa_DuvpFb7Er4TEnFaiSI8f5PCmPVQ/exec" method="post" id="submitform" class="leads__form" onsubmit="submitForm(event)">
+                  <label for="Full_Name" class="leads__form-lable">Full name</label>
+                  <input type="text" class="leads__input" name="Full_Name" id="Full_Name" required placeholder="Type Your Full Name">
+                  <label for="Website_URL" class="leads__form-lable">Website</label>
+                  <input type="url" class="leads__input" name="Website_URL" id="Website_URL"  placeholder="Insert Website URL">
+                  <label for="Email_Add" class="leads__form-lable">Email</label>
+                  <input type="email" class="leads__input" name="Email_Add" id="Email_Add" placeholder="Insert Your Email ">
+                  <label for="Phone_Number" class="leads__form-lable">Phone</label>
+                  <input type="tel" class="leads__input"  name="Phone_Number" id="Phone_Number" placeholder="(eg: +92 3043024152)">
+                  <input type="submit" class="leads__btn btn">
+                </form>
+              </div>
+              <script>
+                function submitForm(event) {
+                  event.preventDefault(); // Prevent default form submission
+                
+                  var form = document.getElementById('submitform');
+                  var formData = new FormData(form);
+                
+                  fetch(form.action, {
+                    method: 'POST',
+                    body: formData
+                  })
+                  .then(response => {
+                    if (response.ok) {
+                      document.getElementById('submitmsg2').style.display = 'flex';
+                        setTimeout(() => {
+                    submitmsg2.style.display = 'none'; // Hide the message box after 3 seconds
+                    }, 5000)
+                      form.reset(); // Reset the form
+                    } else {
+                      alert('Failed to submit form. Please try again.');
+                    }
+                  })
+                  .catch(error => {
+                    console.error('Error:', error);
+                    alert('Failed to submit form. Please try again.');
+                  });
+                }
+                </script>
+                
+          
+            </section>  
+            <section class="submitmsg containter" id="submitmsg2">
+                <div class="submitmsg__container" style="background-color: var(--clr-dark); color: var(--clr-light); border: 2px solid var(--clr-brand);">
+                    <h1>
+              <strong>Thanks for applying</strong>, we'll be in touch within the next <strong>24hrs!</strong>
+            </h1>
+                </div>
+            </section>
+
+
+
+        </section>
+        <section class="about container section"  id="About">
+            <h2 class="about__title" >
+          Who are 
+          <strong class="about__strong">
+           WE 
+          </strong>
+        </h2>
+            <p class="about__description">
+                At Sales Banao, we’re more than just a marketing agency – <br> we’re your trusted partner in solving lead flow and client inflow challenges. 
+
+Our focus is on delivering qualified, <strong>sales-ready</strong> leads that ensure your business thrives without the hassle of managing unqualified prospects. From crafting tailored strategies to executing campaigns that drive real results, we simplify the process of growing your business.
+
+With expertise in social media marketing, lead generation, web design, and graphic design, we bring a complete solution to help you connect with the right audience effectively and efficiently.
+
+We don’t just run ads; we ensure your leads are ready for action, giving you the time to focus on running your business while we handle the rest.
+        </section>
+        <section class="process container section" id="Process">
+            <h2 class="process__title">
+          Our
+          <strong class="process__strong">
+            PROCESS 
+          </strong>
+        </h2>
+            <div class="process__steps-container">
+                <div class="process__steps">
+                    <img src="Number-1.png" alt="1" class="process__img">
+                    <h3 class="process__subtitle">
+                        Discovery & Strategy:
+            </h3>
+                    <p class="process__step-description">
+                        We start by understanding your business, goals, and audience. Together, we craft a tailored plan to solve your lead and client flow challenges.
+                    </p>
+                </div>
+                <div class="process__steps">
+                    <img src="Number-2.png" alt="2" class="process__img">
+                    <h3 class="process__subtitle">
+                        Expert Execution:
+            </h3>
+                    <p class="process__step-description">
+                        Our team leverages cutting-edge strategies and tools to create and run result-driven campaigns. From targeted social media ads to optimized landing pages, we ensure every step aligns with your goals.
+                    </p>
+                </div>
+                <div class="process__steps">
+                    <img src="Number-3.png" alt="3" class="process__img">
+                    <h3 class="process__subtitle">Lead Delivery & Optimization:</h3>
+                    <p class="process__step-description">We deliver qualified, <strong>sales-ready</strong> leads directly to you and continuously optimize campaigns to keep the results improving.</p>
+                </div>
+            </div>
+        </section>
+        <section class="leads container section" id="Contact">
+            <h2 class="leads__title about__title">Get Qualified,<br> Sales-Ready Leads—No Hassle! 🎯 </h2>
+            <h4 class="leads__subtitle">👉 Fill out this form to schedule a free discovery call and discover <br>how we can help streamline your client flow with the best leads for your business!" </h4>
+            <form action="" class="leads__form" name="submit-to-google-sheet1">
+                <label for="Name" class="leads__form-lable">Full name</label>
+                <input type="text" class="leads__input" name="Name" id="name" required placeholder="Type Your Full Name">
+                <label for="Website" class="leads__form-lable">Website</label>
+                <input type="url" class="leads__input" name="Website" id="websiteurl" placeholder="eg: https://www.salesbanao.com">
+                <label for="Email" class="leads__form-lable">Email</label>
+                <input type="email" class="leads__input" name="Email" id="emailaddress" placeholder="Insert Your Email ">
+                <label for="Phone" class="leads__form-lable">Phone</label>
+                <input type="tel" class="leads__input" name="Phone" id="phonenumber" placeholder="(eg: +92 3043024152)">
+                <input type="submit" class="leads__btn btn">
+            </form>
+
+            <section class="submitmsg containter" id="submitmsg">
+                <div class="submitmsg__container">
+                    <h1>
+            <strong>Thanks for applying</strong>, we'll be in touch within the next <strong>24hrs!</strong>
+          </h1>
+                </div>
+            </section>
+
+        </section>
+        <section class="Contact container section" id="Socials">
+            <h2 class="contact__title about__title">Get In <strong>Contact </strong> </h2>
+            <p class="contact__description about__description"><a href="https://www.facebook.com/farhannsalesbanao" target="_blank">Facebook</a> | <a href="https://www.instagram.com/salesbanao/" target="_blank">Instagram</a> |<a href="https://www.linkedin.com/company/salesbanao/" target="_blank">Linkedin</a> </p>
+            <a href="mailto:salesbanao@gmail.com" target="_blank" class="contact__btn btn">Reach Out</a>
+
+
+
+        </section>
+        <!-- <section></section> -->
+    </main>
+    <footer class="footer container section">
+        <div class="footer__items-container">
+            <div class="footer__items footer__item1">
+                <img src="Industry.png" alt="Industry Specialist" class="footer__item-img footer__item-img1">
+                <h4 class="footer__item-title"> Industry Specialists</h4>
+            </div>
+            <div class="footer__items footer__item2">
+                <img src="Guarantee.png" alt="Guaranteed Results" class="footer__item-img">
+                <h4 class="footer__item-title">Guaranteed Results</h4>
+            </div>
+            <div class="footer__items footer__item3">
+                <img src="Salesready.png" alt="QUALIFIED LEADS" class="footer__item-img">
+                <h4 class="footer__item-title">QUALIFIED LEADS</h4>
+            </div>
+        </div>
+        <div>
+            <img src="Asset 1.png" alt="Sales Banao" class="footer__logo">
+        </div>
+        <div>
+            <p>Sales Banao All Rights Reserved</p>
+        </div>
+    </footer>
+    <script type="module" src="./src/main.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyu4UeqZp9tdQ5Z4ZD3vIKzBnNh2P-c2DTRCOPYDP1a8WyKJeAIxAZ_rRaE9O_goOwP/exec';
+          const form = document.forms['submit-to-google-sheet1'];
+          const submitmsg = document.getElementById('submitmsg');
+    
+          form.addEventListener('submit', e => {
+              e.preventDefault();
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                  .then(response => {
+                      console.log('Success!', response);
+                      showMessage();
+                  })
+                  .catch(error => console.error('Error!', error.message));
+          });
+    
+          function showMessage() {
+              submitmsg.style.display = 'flex'; // Show the message box
+    
+              setTimeout(() => {
+                  submitmsg.style.display = 'none'; // Hide the message box after 3 seconds
+              }, 5000)
+              form.reset()
+          }
+    </script>
+
+
+
+</body>
+
+</html>

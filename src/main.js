@@ -1,0 +1,12 @@
+import 'modern-normalize';
+import '../styles/style.css';
+import '../styles/Components/header.css';
+import '../styles/Components/hero.css';
+import '../styles/Components/about.css';
+import '../styles/Components/process.css';
+import '../styles/Components/contact.css';
+import '../styles/Components/leads.css';
+import '../styles/Components/footer.css';
+import '../styles/Components/popupform.css';
+import '../styles/Components/formmsg.css';
+import '../styles/utils.css';
